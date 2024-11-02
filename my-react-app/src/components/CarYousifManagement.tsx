@@ -180,7 +180,7 @@ const CarYousifManagement: React.FC = () => {
             <ul className="list-group">
                 {cars.map((car) => (
                     <li key={car.id} className="list-group-item d-flex justify-content-between align-items-center">
-                        {car.ownerName} {car.ownerSurename} - {car.carBrandName} ({car.carModel})
+                        {car.ownerName} {car.ownerSurename} - {car.carBrandName} ({car.carModel}) - {car.carPlateNum} - {car.chassisNumber}
                         <div>
                             <button className="btn btn-warning btn-sm me-2" onClick={() => handleEditCar(car)}>Edit</button>
                             <button className="btn btn-danger btn-sm" onClick={() => handleDeleteCar(car.id || 0)}>Delete</button>
